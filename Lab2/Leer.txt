@@ -1,0 +1,29 @@
+Main: 
+
+En el main se encuentran creados vectores con los valores de x y las funciones evaluadas con distintas distancias (10,5,1,0.5), las cuales fueron sometidas a interpolaciones mediante los métodos de diferencias divididas, minimos cuadrados, spline cúbico y diferencias finitas.
+
+A lo largo del desarrollo, no se logró interpolar mediante diferencias divididas y diferencias finitas las ecuaciones 1 y 2 que presentaban distancias de 0.5. Esto es debido a que el algoritmo utilizado ocupaba como elemento una matriz, la cual no soportaba la generación de matrices grandes y generaba un segmentation fault al ser ejecutada. El resto de los métodos no presentó mayores complicaciones.
+
+La denominada ecuación1  en el desarrollo corresponde a la exponencial y la dos al polinomio.
+
+Gráficos: 
+Los gráficos presentados en escala logarítmica permiten representan valores de magnitudes muy diferentes. La mayor parte de los gráficos en escala lineal presentaban una similitud con respecto a la gráfica del polinomio. 
+
+Errores: 
+El error que se utilizó fue el rmse.
+
+El método que presentó un menor error corresponde a minimos cuadrados, el cual basa su funcionamiento en la minimización del error cuadrático medio. En el caso del polinomio, el error fue pequeño, debido a que este método solo sirve para interpolar modelos lineales. Por el contrario, para la exponencial, el error presentado fue grande, pero menor al resto de los métodos.
+
+Se puede apreciar en spline, que a pesar de generar un polinomio para cada intervalo, genera un error extremadamente grande en ambas funciones, lo cual hace dificil la interpolación. El error, a medida que avanzaba el número de intervalos disminuía, esto es debido a que las se genera un mayor número de polinomios, ya que de lo contrario, son muchos los valores que pueden ser calculados utilizando la misma función.
+
+En el caso de diferencias divididas y diferencias finitas, su implementación es bastante similar, ya que se busca generar una tabla que contenga en un inicio los valores de f(x) y que mediante el cálculo de las diferencias encuentra los coeficientes del polinomio. Esto también se ve reflejado en que los errores no presentan una gran diferencia entre ellos.
+
+Finalmente, se puede concluir que los cuatro métodos vistos pueden generar una buena interpolación de ecuaciones lineales, destacando minimos cuadrados.
+
+
+Integrales: 
+
+Se utilizó la interpolación de mínimos cuadrados para calcular la integral mediante los métodos del trapecio y simpson. En ambos casos, los algoritmos fueron cortos y fáciles de entender (en comparación con las integrales que se deben desarrollar para obtener los mismos resultados, en donde la complejidad dependerá de la función),ya que buscan mediante trapecios aproximar el área de la función. 
+Simpson destaca por el uso de dos fórmulas, las cuales dependen de la cantidad de particiones con las que se está trabajando, lo cual permite realizar una mejor aproximación.
+
+En este caso, el error de ambos métodos no fue calculado. 

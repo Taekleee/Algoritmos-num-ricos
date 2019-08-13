@@ -1,0 +1,1 @@
+El nombre de los archivos corresponde al método de interpolacion_número de archivo_ ecuacionUtilizada_distancia.

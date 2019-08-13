@@ -1,0 +1,4 @@
+Calculo  exponencial mediante trapecio: 9.09671e+087
+Calculo polinomio mediante trapecio: 2.09263e+008
+Calculo exponencial mediante simpson: nan
+Calculo polinomio mediante simpson: nan

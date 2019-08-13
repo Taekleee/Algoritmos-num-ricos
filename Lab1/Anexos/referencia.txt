@@ -1,0 +1,2 @@
+Los códigos de resolución de sistemas de ecuaciones fueron obtenidos de https://sites.google.com/site/pn20111/home.
+Los códigos de resolución de ecuaciones no lineales, resolución de ecuaciones de varias variables y ranking fueron creados para el desarrollo del laboratorio.

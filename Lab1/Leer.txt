@@ -1,0 +1,1 @@
+La fecha de modificación del archivo es del día 9 de mayo, pero en el informe aparece como 10 debido a un problema con el editor sharlatex. 
